@@ -1,7 +1,7 @@
 'use client';
 
 import { ColumnDef } from '@tanstack/react-table';
-import { Document } from '../../types';
+import { Document } from '../../../types';
 import  StatusBadge  from './StatusBadge';
 import  Checkbox  from './Checkbox';
 

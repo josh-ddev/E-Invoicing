@@ -1,9 +1,9 @@
 'use client';
 import { useState, useMemo } from 'react';
 import { FiSearch, FiFileText } from 'react-icons/fi';
-import { AuditLogEntry, getStatusColor } from '../../types';
-import { sampleAuditData } from '../../lib/data';
-import AuditLogDetailsModal from '../components/AuditLogDetailsModal';
+import { AuditLogEntry, getStatusColor } from '../../../types';
+import { sampleAuditData } from '../../../lib/data';
+import AuditLogDetailsModal from './AuditLogDetailsModal';
 
 export default function AuditLog() {
   const [searchQuery, setSearchQuery] = useState('');

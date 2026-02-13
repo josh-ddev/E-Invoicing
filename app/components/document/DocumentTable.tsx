@@ -11,8 +11,8 @@ import {
   ColumnFiltersState,
   RowSelectionState,
 } from '@tanstack/react-table';
-import { Document } from '../../types';
-import columns from './Columns';
+import { Document } from '../../../types';
+import columns from '../ui/Columns';
 
 interface DocumentTableProps {
   data: Document[];
@@ -62,7 +62,7 @@ export const DocumentTable = function ({ data, onSelectionChange }: DocumentTabl
         (d) => d.statusType === 'created' || d.statusType === 'processing'
       ).length,
     };
-  }, [data, table.getSelectedRowModel().rows]);
+  }, [data, table]);  //.getSelectedRowModel().rows or .getState().rowSelection
 
   return (
     <div className="flex flex-col h-full">
@@ -127,7 +127,7 @@ export const DocumentTable = function ({ data, onSelectionChange }: DocumentTabl
       {/* Footer with stats - fixed at bottom */}
       <div className="mt-3 flex items-center gap-6 text-xs shrink-0">
         <div className="text-gray-600">
-          Pitch Overview: {table.getSelectedRowModel().rows.length} of{' '}
+          Pitch Overview: {table.getSelectedRowModel().rows.length} of
           {data.length} selected
         </div>
         <div className="flex items-center gap-4 ml-auto">

@@ -1,6 +1,6 @@
 'use client'
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./components/ui/Header";
+import Main from "./components/ui/Main";
 // import { useState } from "react";
 // import CockpitSettings from "./components/CockpitSettings";
 // import type { moreOptions } from "../types";

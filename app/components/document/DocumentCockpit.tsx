@@ -13,7 +13,7 @@ import {
   FiSearch,
 } from 'react-icons/fi';
 import { DocumentTable } from './DocumentTable';
-import { sampleData } from '../../lib/data';
+import { sampleData } from '../../../lib/data';
 import { Document } from '@/types';
 import { FaChevronDown, FaFile, FaGear,FaInfo } from 'react-icons/fa6';
 import {
@@ -33,7 +33,7 @@ import {
 import { toast } from "sonner"
 
 import { moreOptions } from '@/types';
-import CockpitSettings from './CockpitSettings';
+import CockpitSettings from '../settings/CockpitSettings';
 
 type docVariants = 'Customer Invoice' | 'Credit Note' | 'Debit Note';
 

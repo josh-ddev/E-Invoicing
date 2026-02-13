@@ -5,10 +5,10 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import DocumentCockpit from './DocumentCockpit';
-import DashboardOverview from './Dashboard';
-import Integration from './Integration';
-import  AuditLog  from './AuditLog';
+import DocumentCockpit from '../document/DocumentCockpit';
+import DashboardOverview from '../dashboard/Dashboard';
+import Integration from '../integration/Integration';
+import  AuditLog  from '../audit/AuditLog';
 
 
 

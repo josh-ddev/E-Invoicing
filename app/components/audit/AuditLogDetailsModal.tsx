@@ -5,7 +5,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import { AuditLogEntry, getStatusColor } from '../../types';
+import { AuditLogEntry, getStatusColor } from '@/types';
 
 interface AuditLogDetailsModalProps {
   log: AuditLogEntry | null;
